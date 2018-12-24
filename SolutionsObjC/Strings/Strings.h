@@ -8,10 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-//NS_ASSUME_NONNULL_BEGIN
-
-@interface Strings : NSObject
-
-@end
-
-//NS_ASSUME_NONNULL_END
+NSInteger findNumberOfRepetition(NSString *string, char caracter);
+void findMaxRepetition(NSString *string, char* character, int* repetitions);
