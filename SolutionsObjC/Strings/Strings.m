@@ -25,13 +25,29 @@ NSInteger findNumberOfRepetition(NSString *string, char caracter) {
 }
 
 void findMaxRepetition(NSString *string, char* character, int* repetitions) {
-    if( string.length == 0) {
-        *character = 0;
-        *repetitions = 0;
-        return;
-    };
+    *character = 0;
+    *repetitions = 0;
     
-  
+    __block int currentCount = 0;
+    __block char currentCharacter = 0;
+    enumerate(string, ^(NSInteger idx, char ch) {
+        if (currentCharacter != ch) {
+            if ( currentCount > *repetitions) {
+                *repetitions = currentCount;
+                *character = currentCharacter;
+            }
+            
+            currentCount = 0;
+            currentCharacter = ch;
+        }
+        
+        currentCount ++;
+    });
+    
+    if ( currentCount > *repetitions) {
+        *repetitions = currentCount;
+        *character = currentCharacter;
+    }
 }
 
 #pragma mark -

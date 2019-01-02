@@ -32,11 +32,30 @@
     XCTAssertEqual(result, 4);
 }
 
-//- (void)testPerformanceExample {
-//    // This is an example of a performance test case.
-//    [self measureBlock:^{
-//        // Put the code you want to measure the time of here.
-//    }];
-//}
+- (void)testFindMaxRepetition
+{
+    int repetition;
+    char character;
+    
+    findMaxRepetition(@"", &character, &repetition);
+    XCTAssertEqual(repetition, 0);
+    XCTAssertEqual(character, 0);
+    
+    findMaxRepetition(@"111", &character, &repetition);
+    XCTAssertEqual(repetition, 3);
+    XCTAssertEqual(character, '1');
+    
+    findMaxRepetition(@"2222111", &character, &repetition);
+    XCTAssertEqual(repetition, 4);
+    XCTAssertEqual(character, '2');
+    
+    findMaxRepetition(@"1113333222", &character, &repetition);
+    XCTAssertEqual(repetition, 4);
+    XCTAssertEqual(character, '3');
+    
+    findMaxRepetition(@"111333322255555", &character, &repetition);
+    XCTAssertEqual(repetition, 5);
+    XCTAssertEqual(character, '5');
+}
 
 @end
