@@ -17,6 +17,8 @@
 		6B0FE7A621CEF12B00244D67 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FE7A521CEF12B00244D67 /* Strings.m */; };
 		6B0FE7A921CF023A00244D67 /* StringsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FE7A821CF023A00244D67 /* StringsTests.m */; };
 		6B0FE7AB21CF02B300244D67 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FE7A521CEF12B00244D67 /* Strings.m */; };
+		6BC0EE4021DD31D10093D7EA /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE3F21DD31D10093D7EA /* CArray.c */; };
+		6BC0EE4221DD32000093D7EA /* CArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE4121DD32000093D7EA /* CArrayTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		6B0FE7A421CEF12B00244D67 /* Strings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Strings.h; sourceTree = "<group>"; };
 		6B0FE7A521CEF12B00244D67 /* Strings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Strings.m; sourceTree = "<group>"; };
 		6B0FE7A821CF023A00244D67 /* StringsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringsTests.m; sourceTree = "<group>"; };
+		6BC0EE3E21DD31BE0093D7EA /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
+		6BC0EE3F21DD31D10093D7EA /* CArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CArray.c; sourceTree = "<group>"; };
+		6BC0EE4121DD32000093D7EA /* CArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CArrayTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +92,7 @@
 		6B0FE77E21CEEE8B00244D67 /* SolutionsObjC */ = {
 			isa = PBXGroup;
 			children = (
+				6BC0EE3C21DD317B0093D7EA /* C */,
 				6B0FE7A721CEF13800244D67 /* Strings */,
 				6B0FE77F21CEEE8B00244D67 /* AppDelegate.h */,
 				6B0FE78021CEEE8B00244D67 /* AppDelegate.m */,
@@ -118,6 +124,24 @@
 				6B0FE7A821CF023A00244D67 /* StringsTests.m */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		6BC0EE3C21DD317B0093D7EA /* C */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE3D21DD31870093D7EA /* Array */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		6BC0EE3D21DD31870093D7EA /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE3E21DD31BE0093D7EA /* CArray.h */,
+				6BC0EE3F21DD31D10093D7EA /* CArray.c */,
+				6BC0EE4121DD32000093D7EA /* CArrayTests.m */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B0FE78421CEEE8B00244D67 /* ViewController.m in Sources */,
+				6BC0EE4021DD31D10093D7EA /* CArray.c in Sources */,
 				6B0FE78F21CEEE8C00244D67 /* main.m in Sources */,
 				6B0FE7A621CEF12B00244D67 /* Strings.m in Sources */,
 				6B0FE78121CEEE8B00244D67 /* AppDelegate.m in Sources */,
@@ -232,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B0FE7A921CF023A00244D67 /* StringsTests.m in Sources */,
+				6BC0EE4221DD32000093D7EA /* CArrayTests.m in Sources */,
 				6B0FE79921CEEE8C00244D67 /* SolutionsObjCTests.m in Sources */,
 				6B0FE7AB21CF02B300244D67 /* Strings.m in Sources */,
 			);
