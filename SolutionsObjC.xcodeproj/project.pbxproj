@@ -19,6 +19,12 @@
 		6B0FE7AB21CF02B300244D67 /* Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FE7A521CEF12B00244D67 /* Strings.m */; };
 		6BC0EE4021DD31D10093D7EA /* CArray.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE3F21DD31D10093D7EA /* CArray.c */; };
 		6BC0EE4221DD32000093D7EA /* CArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE4121DD32000093D7EA /* CArrayTests.m */; };
+		6BC0EE4621DD4A600093D7EA /* Algorithms.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE4521DD4A600093D7EA /* Algorithms.c */; };
+		6BC0EE4A21DD4ABB0093D7EA /* Sample.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE4921DD4ABB0093D7EA /* Sample.c */; };
+		6BC0EE4F21DF7E470093D7EA /* BinaryHeap.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE4E21DF7E470093D7EA /* BinaryHeap.c */; };
+		6BC0EE5221DF98590093D7EA /* BinaryHeapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE5121DF98590093D7EA /* BinaryHeapTests.m */; };
+		6BC0EE5721DFBB290093D7EA /* QSort.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE5621DFBB290093D7EA /* QSort.c */; };
+		6BC0EE5921DFBB460093D7EA /* QSortTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC0EE5821DFBB460093D7EA /* QSortTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		6BC0EE3E21DD31BE0093D7EA /* CArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CArray.h; sourceTree = "<group>"; };
 		6BC0EE3F21DD31D10093D7EA /* CArray.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CArray.c; sourceTree = "<group>"; };
 		6BC0EE4121DD32000093D7EA /* CArrayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CArrayTests.m; sourceTree = "<group>"; };
+		6BC0EE4421DD4A600093D7EA /* Algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Algorithms.h; sourceTree = "<group>"; };
+		6BC0EE4521DD4A600093D7EA /* Algorithms.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Algorithms.c; sourceTree = "<group>"; };
+		6BC0EE4821DD4ABB0093D7EA /* Sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		6BC0EE4921DD4ABB0093D7EA /* Sample.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Sample.c; sourceTree = "<group>"; };
+		6BC0EE4D21DF7E470093D7EA /* BinaryHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryHeap.h; sourceTree = "<group>"; };
+		6BC0EE4E21DF7E470093D7EA /* BinaryHeap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryHeap.c; sourceTree = "<group>"; };
+		6BC0EE5121DF98590093D7EA /* BinaryHeapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryHeapTests.m; sourceTree = "<group>"; };
+		6BC0EE5521DFBB290093D7EA /* QSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSort.h; sourceTree = "<group>"; };
+		6BC0EE5621DFBB290093D7EA /* QSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QSort.c; sourceTree = "<group>"; };
+		6BC0EE5821DFBB460093D7EA /* QSortTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSortTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +145,10 @@
 		6BC0EE3C21DD317B0093D7EA /* C */ = {
 			isa = PBXGroup;
 			children = (
+				6BC0EE5321DFBB070093D7EA /* Sort */,
+				6BC0EE4B21DF7DFD0093D7EA /* DataStructure */,
+				6BC0EE4721DD4A9E0093D7EA /* Sample */,
+				6BC0EE4321DD4A4E0093D7EA /* Algorithms */,
 				6BC0EE3D21DD31870093D7EA /* Array */,
 			);
 			path = C;
@@ -142,6 +162,68 @@
 				6BC0EE4121DD32000093D7EA /* CArrayTests.m */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		6BC0EE4321DD4A4E0093D7EA /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE4421DD4A600093D7EA /* Algorithms.h */,
+				6BC0EE4521DD4A600093D7EA /* Algorithms.c */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		6BC0EE4721DD4A9E0093D7EA /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE4821DD4ABB0093D7EA /* Sample.h */,
+				6BC0EE4921DD4ABB0093D7EA /* Sample.c */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		6BC0EE4B21DF7DFD0093D7EA /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE5021DF7FF90093D7EA /* Heap */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		6BC0EE4C21DF7E160093D7EA /* BinaryHeap */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE5121DF98590093D7EA /* BinaryHeapTests.m */,
+				6BC0EE4D21DF7E470093D7EA /* BinaryHeap.h */,
+				6BC0EE4E21DF7E470093D7EA /* BinaryHeap.c */,
+			);
+			path = BinaryHeap;
+			sourceTree = "<group>";
+		};
+		6BC0EE5021DF7FF90093D7EA /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE4C21DF7E160093D7EA /* BinaryHeap */,
+			);
+			path = Heap;
+			sourceTree = "<group>";
+		};
+		6BC0EE5321DFBB070093D7EA /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE5421DFBB110093D7EA /* QSort */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		6BC0EE5421DFBB110093D7EA /* QSort */ = {
+			isa = PBXGroup;
+			children = (
+				6BC0EE5821DFBB460093D7EA /* QSortTests.m */,
+				6BC0EE5521DFBB290093D7EA /* QSort.h */,
+				6BC0EE5621DFBB290093D7EA /* QSort.c */,
+			);
+			path = QSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +328,13 @@
 			files = (
 				6B0FE78421CEEE8B00244D67 /* ViewController.m in Sources */,
 				6BC0EE4021DD31D10093D7EA /* CArray.c in Sources */,
+				6BC0EE4F21DF7E470093D7EA /* BinaryHeap.c in Sources */,
 				6B0FE78F21CEEE8C00244D67 /* main.m in Sources */,
 				6B0FE7A621CEF12B00244D67 /* Strings.m in Sources */,
 				6B0FE78121CEEE8B00244D67 /* AppDelegate.m in Sources */,
+				6BC0EE5721DFBB290093D7EA /* QSort.c in Sources */,
+				6BC0EE4A21DD4ABB0093D7EA /* Sample.c in Sources */,
+				6BC0EE4621DD4A600093D7EA /* Algorithms.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +342,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC0EE5221DF98590093D7EA /* BinaryHeapTests.m in Sources */,
 				6B0FE7A921CF023A00244D67 /* StringsTests.m in Sources */,
 				6BC0EE4221DD32000093D7EA /* CArrayTests.m in Sources */,
 				6B0FE79921CEEE8C00244D67 /* SolutionsObjCTests.m in Sources */,
 				6B0FE7AB21CF02B300244D67 /* Strings.m in Sources */,
+				6BC0EE5921DFBB460093D7EA /* QSortTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

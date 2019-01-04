@@ -9,7 +9,5 @@
 #ifndef CArray_h
 #define CArray_h
 
-char* findNumber(int arr_count, int* arr, int k);
-int* oddNumbers(int l, int r, int* result_count);
 
 #endif /* CArray_h */
